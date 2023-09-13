@@ -1,0 +1,527 @@
+ body {
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+ 
+ /*NAVBAR*/
+.logo img {
+    width: 40px;
+    margin: 2px;
+}
+
+.navbar {
+    
+    overflow: hidden;
+    background-color: #BE9428;
+    display: grid;
+    grid-template-columns: 0.2fr 1.8fr;
+}
+
+
+ul.topnav li {
+    list-style-type: none;
+    float: right;
+    font-size: 1.5em;
+    padding-left: 10px;
+}
+
+ul.topnav li a {
+    text-decoration: none;
+    color:#000000;
+    margin-right: 10px;
+}
+ul.topnav li:hover{
+    background-color: #555555;
+}
+
+/*HOME*/
+.container-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lichtbild {
+    max-width: 786px;
+    width: 100%;
+    height: auto;
+}
+
+.headline {
+    font-size: 4vw;
+    font-family: Verdana;
+    margin-right: 10px;
+}
+ 
+ /* SKILLS*/
+
+ .skills {
+     display: flex;
+     flex-wrap: wrap;
+     padding: 0 4px;
+ }
+
+ .col .card {
+     margin-top: 8px;
+     vertical-align: middle;
+     width: 100%;
+ }
+
+ /* Create three equal columns that sits next to each other */
+ .col {
+     flex: 33%;
+     max-width: 33%;
+     padding: 0 4px;
+ }
+
+ /* Responsive layout - makes a two column-layout instead of four columns 
+ @media screen and (max-width: 800px) {
+     .column {
+         flex: 50%;
+         max-width: 50%;
+     }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+ @media screen and (max-width: 600px) {
+     .column {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+ 
+ /* TABS KOMPETENZEN
+ 
+ /* Style tab links */
+ .tablink {
+     background-color: #555;
+     color: white;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     font-size: 17px;
+     width: 25%;
+ }
+
+ .icons {
+    filter: invert(34%) sepia(3%) saturate(5%) hue-rotate(353deg) brightness(89%) contrast(85%);
+ }
+
+ .tablink:hover {
+     background-color: #BE9428;
+ }
+
+ /* Style the tab content (and add height:100% for full page content) */
+ .tabcontent {
+     color: white;
+     display: none;
+     padding: 100px 20px;
+     height: 100%;
+ }
+
+ #Kompetenzen {
+     background-color: #BE9428;
+ }
+
+ #Sprachen {
+     background-color: #BE9428;
+ }
+
+ #Berufserfahrung {
+     background-color: #BE9428;
+ }
+
+ #Ausbildung {
+     background-color: #BE9428;
+ }
+
+.technologies {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 70%;
+}
+
+.technology {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.technology p {
+    margin-left: -100px;
+    margin-bottom: -5px;
+}
+
+ .icons {
+    width: 30px;
+    color: grey;
+    margin-top: 10px;
+ }
+
+ .languages {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     width: 50%;
+ }
+
+ .language {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+
+ }
+
+ .language p {
+     margin-left: -100px;
+     margin-bottom: -5px;
+ }
+
+ .flags {
+     width: 30px;
+     color: grey;
+     margin-top: 10px;
+ }
+
+ .container-tab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+ }
+
+ .container-tab a {
+    text-decoration: none;
+    color: #ffffff;
+    height: 290px;
+ }
+
+ .card {
+    height: 100%;
+     box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.6);
+     /* this adds the "card" effect */
+     padding: 16px;
+     margin: 10px;
+     text-align: center;
+     background-color: grey;
+     position: relative;
+     top: 0;
+     transition: top ease 0.5s;
+ }
+
+ .card h4 {
+    color:#BE9428;
+ }
+
+ ul {
+    text-align: left;
+ }
+
+ .card:hover {
+    top: -10px;
+ }
+ /*Kompetenzen Endet hier
+
+ /* SKILLS*/
+ .interesse h1{
+    margin: 50px;
+    padding-top: 50px;
+ }
+
+ .intcol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 50px;
+ }
+
+.intcol .card {
+     background-color: #555;
+ }
+
+ .intcol .card h4 {
+    color:#BE9428;
+ }
+
+ .intcol .card p {
+    color: #ffffff;
+ }
+
+ /*PROJEKTE*/
+
+ /*.projekte {
+    max-width: 100%;
+ }*/
+
+ .projekte h1{
+    margin-left:50px;
+    padding-top: 50px;
+ }
+
+ .projekt-liste {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 15px;
+    margin: 50px;
+ }
+
+ .projekt-liste a {
+    text-decoration: none;
+    /*height: 640px;*/
+ }
+
+ .projekt-card {
+    /*width: 300px;*/
+    height: 100%;
+    display: block;
+    background-color: #555;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.6);
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+ }
+
+ .projekt-card:hover {
+     top: -10px;
+ }
+
+ .projekt-card img {
+    width: 100%;
+    min-height: 250px;
+ }
+
+ .projekt-card h4 {
+    color:#BE9428;
+ }
+
+ .projekt-card p {
+    color: #ffffff;
+ }
+
+ /*KONTAKTE*/
+
+ .kontakte {
+    background-color: #BE9428;
+    
+ }
+
+ .kontakte h1 {
+    padding-top: 50px;
+    margin-left: 50px;
+ }
+
+ .kontakt-liste {
+     width: 40%;
+     margin-left:50px;
+ }
+
+ .kontakt img {
+     width: 30px;
+     color: grey;
+     margin-top: 10px;
+    filter: invert(34%) sepia(3%) saturate(5%) hue-rotate(353deg) brightness(89%) contrast(85%);
+ }
+
+ .kontakt-icon a img {
+    width: 30px;
+    color: grey;
+    margin-top: 10px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    filter: invert(34%) sepia(3%) saturate(5%) hue-rotate(353deg) brightness(89%) contrast(85%);
+ }
+
+ .kontakt-icon a img:hover {
+     top: -5px;
+ }
+
+ .kontakt a {
+    text-decoration: none;
+    color:#000000;
+ }
+
+.column1 {
+    margin: 30px;
+}
+
+.column2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 30px;
+    width: 50%;
+}
+
+ /* Create three equal columns that sits next to each other */
+ /*.intcol {
+     flex: 33%;
+     max-width: 33%;
+     padding: 0 4px;
+ }*/
+
+ /* Responsive layout - makes a two column-layout instead of four columns 
+ @media screen and (max-width: 800px) {
+     .column {
+         flex: 50%;
+         max-width: 50%;
+     }
+ }
+
+ /* Responsive layout - makes the two columns stack on top of each other instead of next to each other 
+ @media screen and (max-width: 600px) {
+     .column {
+         flex: 100%;
+         max-width: 100%;
+     }
+ }
+
+ /*RESPONSIVITY*/
+ @media only screen and (max-width: 900px) {
+
+    ul.topnav li {
+        float: none;
+        position: unset;
+        text-align: right;
+    }
+
+    .projekt-liste{
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+        margin: 15px;
+    }
+
+    .technologies {
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .languages {
+        width: 80%;
+     }
+     
+ }
+
+ @media only screen and (max-width: 500px) {
+
+    h1 {
+        margin: 20px;
+        padding-top: 10px;
+        font-size: 24px;
+    }
+
+    .interesse h1{
+        margin: 20px;
+        padding-top: 20px;
+    }
+
+    .projekte h1 {
+        margin: 20px;
+        padding-top: 20px;
+    }
+
+    .kontakte h1 {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    ul.topnav li {
+        font-size: 14px;
+    }
+
+    .tablink {
+        padding: 5px;
+        font-size: 12px;
+    }
+
+    .container-tab {
+        grid-template-columns: 1fr;
+    }
+
+    .technologies {
+        padding: 0;
+    }
+
+    .technology p {
+        margin-left: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .icons {
+        width: 20px;
+    }
+
+    .technology {
+        grid-template-columns: 0.5fr 1.5fr;
+    }
+
+    .intcol .card p {
+        display: none;
+    }
+
+    /* #Berufserfahrung>div:nth-child(2)>a:nth-child(2) {
+        height: 230px;
+    } */
+
+    .container-tab a {
+        height: auto;
+    }
+
+
+    .intcol {
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0;
+        padding: 5px;
+    }
+
+    .card {
+        height: auto;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .card h4 {
+        font-size: 17px;
+    }
+
+    .projekt-liste{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: auto;
+    }
+
+    .projekt-card img {
+        min-height: 125px;
+    }
+
+    .projekt-card p {
+        display:none;
+    }
+
+    .kontakt-liste {
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .tabcontent {
+        padding: 20px 0;
+    }
+
+    .languages {
+        width: 100%;
+        grid-template-columns: 1fr;
+        padding: 5px;
+    }
+
+    .language {
+        grid-template-columns: 0.5fr 1fr;
+    }
+
+    .flags {
+        width: 20px;
+    }
+
+    .taetigkeiten {
+        font-size: 14px;
+        text-align: left;
+    }
+
+ }

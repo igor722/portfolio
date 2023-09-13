@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="script/script.js"></script>
+    <title>Igor Arnaut</title>
+    <link rel="icon" type="image/x-icon" href="icons/logo_igor.svg">
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo"><img src="icons/logo_igor.svg" alt="Logo"></div>
+        <ul class="topnav">
+            <li><a href="#meine-kontakt">Kontakt</a></li>
+            <li><a href="#meine-projekte">Meine Projekte</a></li>
+            <li><a href="#meine-interessen">Interessen</a></li>
+            <li><a href="#defaultOpen">Kompetenzen</a></li>
+            <li><a href="#home">Home</a></li>
+        </ul>
+    </div>
+    
+    <!--HOME-->
+    <div id="home" class="container-home">
+        <img src="imgs/20230702_203213.png" alt="Igor Arnaut" class="lichtbild">
+        <div class="headline">
+            <p>Hallo,</p>
+            <p>mein Name ist</p>
+            <p><b>IGOR ARNAUT</b></p>
+            <p>ich werde ein</p>
+            <p>Anwendungsentwickler</p>
+        </div>
+    </div>
+
+
+    <!--KOMPETENZEN-->
+    <!-- Tabs -->
+    <button class="tablink defaultOpen" id="defaultOpen" onclick="openPage('Kompetenzen', this, '#BE9428')">Kompetenzen</button>
+    <button class="tablink" onclick="openPage('Sprachen', this, '#BE9428')">Sprachen</button>
+    <button class="tablink" onclick="openPage('Berufserfahrung', this, '#BE9428')">Berufserfahrung</button>
+    <button class="tablink" onclick="openPage('Ausbildung', this, '#BE9428')">Ausbildung</button>
+    
+    <div id="Kompetenzen" class="tabcontent">
+        <h3>Kompetenzen</h3>
+        <dir class="technologies">
+            <dir class="technology">
+                <img src="icons/html5(1).svg" alt="html" class="icons">
+                <p>HTML</p>
+            </dir>
+            <dir class="technology">
+                <img src="icons/css3.svg" alt="CSS" class="icons">
+                <p>CSS</p>
+            </dir>
+            <dir class="technology">
+                <img src="icons/bootstrap.svg" alt="Bootstrap" class="icons">
+                <p>Bootstrap</p>
+            </dir>
+            <dir class="technology">
+                <img src="icons/square-js.svg" alt="JavaScript" class="icons">
+                <p>JavaScript</p>
+            </dir>
+            <dir class="technology">
+                <img src="icons/react.svg" alt="React" class="icons">
+                <p>React</p>
+            </dir>
+            <dir class="technology">
+                <img src="icons/python(1).svg" alt="Python" class="icons">
+                <p>Python</p>
+            </dir>
+        </dir>
+    </div>
+    
+    <div id="Sprachen" class="tabcontent">
+        <h3>Sprachen</h3>
+        <dir class="languages">
+            <dir class="language">
+                <img src="icons/germany.png" alt="Deutsch" class="flags">
+                <p>Deutsch</p>
+            </dir>
+            <dir class="language">
+                <img src="icons/united-kingdom.png" alt="Englisch" class="flags">
+                <p>Englisch</p>
+            </dir>
+            <dir class="language">
+                <img src="icons/croatia.png" alt="Kroatisch" class="flags">
+                <p>Kroatisch(Muttersprache)</p>
+            </dir>
+            <dir class="language">
+                <img src="icons/italy.png" alt="Italienisch" class="flags">
+                <p>Italienisch(Grundkenntnisse)</p>
+            </dir>
+        </dir>
+    </div>
+    
+    <div id="Berufserfahrung" class="tabcontent">
+        <h3>Berufserfahrung</h3>
+        <div class="container-tab">
+            <a href="https://www.awk-online.de/" target="_blank">
+                <div class="card">
+                    <h5>Juli 2015 - November 2022</h5>
+                    <h4>Teamleiter Stickerei</h4>
+                    <p>AWK - World of Work</p>
+                    <ul>
+                        <li class="taetigkeiten">Ausbau von Abteilung</li>
+                        <li class="taetigkeiten">Schulung der Mitarbeiter</li>
+                        <li class="taetigkeiten">Führung des Teams, Planung, Ressourcenmanagement</li>
+                        <li class="taetigkeiten">Automatisierung von Stickautomaten</li>
+                    </ul>
+                </div>
+            </a>
+            
+            <a href="https://www.walz-tos-textildruck.de/" target="_blank">
+                <div class="card">
+                    <h5>September 2014 - Juni 2015</h5>
+                    <h4>Sticker</h4>
+                    <p>Textildruck - Stuttgart</p>
+                    <ul>
+                        <li class="taetigkeiten">Einführung des Stickautomaten in den Betrieb</li>
+                        <li class="taetigkeiten">Schulung der Mitarbeiter</li>
+                    </ul>
+                </div>
+            </a>
+            
+            <a href="https://www.arriva.com.hr/de-de/home" target="_blank">
+                <div class="card">
+                    <h5>Oktober 2008 - April 2014</h5>
+                    <h4>Busfahrtkontrolle / Fahrdienstleiter</h4>
+                    <p>Arriva Croatia</p>
+                    <ul>
+                        <li class="taetigkeiten">Funktionsprüfung, Prüfung alle erforderlichen Dokumente, Fahrgastinformation</li>
+                        <li class="taetigkeiten">Fahrplan Erstellung für eine Filiale mit etwa 100 Mitarbeiter</li>
+                    </ul>
+                </div>
+            </a>
+            
+        </div>
+        
+        
+    </div>
+    
+    <div id="Ausbildung" class="tabcontent">
+        <h3>Ausbildung</h3>
+        <div class="container-tab">
+            <a href="https://www.gfn.de/" target="_blank">
+                <div class="card">
+                    <h5>Februar 2023 -</h5>
+                    <h4>GFN Stuttgart</h4>
+                    <p>Fachinformatiker - Anwendungsentwickler</p>
+                </div>
+            </a>
+            
+            <a href="https://www.gfn.de/" target="_blank">
+                <div class="card">
+                    <h5>Dezember 2022 - Januar 2022</h5>
+                    <h4>GFN Stuttgart</h4>
+                    <p>Fachinformatiker - Vorbereitungskurs</p>
+                </div>
+            </a>
+            
+            <a href="http://ss-ekonomska-pu.skole.hr/" target="_blank">
+                <div class="card">
+                    <h5>September 2003 - Juni 2007</h5>
+                    <h4>Wirtschaft und Handelsschule Pula</h4>
+                    <p>Kroatien</p>
+                    <p>Wirtschaftssachversändiger</p>
+                </div>
+            </a>
+            
+        </div>
+            
+    </div>
+
+    
+
+
+    <!--INTERESSEN-->
+    <div class="interesse">
+        <h1 id="meine-interessen">Interessen</h1>
+        <div class="intcol col-1">
+            <div class="card">
+                <h4>Webentwicklung</h4>
+                <p>Die Welt der Webentwicklung hat mich von Anfang an fasziniert, da sie mir die Möglichkeit bietet, meine kreativen Ideen
+                in realen, digitalen Welten zum Leben zu erwecken. Mit HTML, CSS und JavaScript als Grundlage kann ich Websites
+                erstellen, die nicht nur funktional, sondern auch ansprechend sind. Ich liebe es, im Browser Ergebnisse meiner Arbeit zu
+                sehen und dabei ständig Neues zu lernen.</p>
+            </div>
+            <div class="card">
+                <h4>Softwareentwicklung</h4>
+                <p>Softwareentwicklung ist eine weitere Leidenschaft von mir, da sie es ermöglicht, komplexe Anwendungen zu erstellen, die
+                die Welt um uns herum verändern können. Das Programmieren von Anwendungen in verschiedenen Programmiersprachen und das
+                Lösen von Herausforderungen in der Softwareentwicklung inspirieren mich immer wieder aufs Neue.</p>
+            </div>
+            <div class="card">
+                <h4>Full-Stack</h4>
+                <p>Full-Stack-Entwicklung ist für mich eine aufregende Möglichkeit, komplette Anwendungen von Grund auf zu entwickeln. Die
+                Fähigkeit, sowohl an der Front-End- als auch an der Back-End-Entwicklung zu arbeiten, erlaubt mir, umfassende und
+                funktionsreiche Lösungen zu schaffen. Von der Gestaltung der Benutzeroberfläche bis zur Implementierung komplexer
+                Datenbanken - Full-Stack-Entwicklung gibt mir die Freiheit, vielseitige Anwendungen zu gestalten.</p>
+            </div>
+        </div>
+    </div>
+    <div class="projekte">
+        <h1 id="meine-projekte">Meine Projekte</h1>
+        <div class="projekt-liste">
+            <a href="https://55o9t5r10itoqkurewztsg.on.drv.tw/My%20Web%20Projects/WeatherApp/" target="_blank">
+                <div class="projekt-card">
+                    <img src="imgs/screenshots/2023-09-08 09_55_38-Go Weather – Firefox Developer Edition.png" alt="Wetter-App">
+                    <h4>Wetter-App</h4>
+                    <p>Willkommen bei meiner Wetter-App, einem aufregenden Lernprojekt, das ich mit Leidenschaft und Hingabe entwickelt
+                        habe.
+                        Diese Anwendung wurde vollständig mit HTML, CSS und JavaScript geschrieben und bietet dir die Möglichkeit,
+                        aktuelle
+                        Wetterinformationen für jeden Ort auf der Welt abzurufen.</p>
+                </div>
+            </a>
+            
+            <a href="https://55o9t5r10itoqkurewztsg.on.drv.tw/My%20Web%20Projects/Restaurant/homepage.html" target="_blank">
+                <div class="projekt-card">
+                    <img src="imgs/screenshots/2023-09-08 09_56_38-Firefox Developer Edition.png" alt="Restaurant">
+                    <h4>Restaurant</h4>
+                    <p>Diese Website ist die digitale Heimat von "Geschmacksfreude", einem fiktiven Restaurant, das für seine
+                        kulinarische
+                        Vielfalt und einladende Atmosphäre bekannt ist. Als ein Projekt, das mit HTML, CSS und JavaScript entwickelt
+                        wurde, ist
+                        diese Website eine Hommage an die Kunst des Webdesigns und der Benutzerfreundlichkeit.</p>
+                </div>
+            </a>
+            
+            <a href="https://igor722.github.io/clock/" target="_blank">
+                <div class="projekt-card">
+                    <img src="imgs/screenshots/2023-09-08 09_57_19-Document – Firefox Developer Edition.png" alt="Clock">
+                    <h4>Wanduhr</h4>
+                    <p>Willkommen bei meiner einzigartigen Uhr-App, die von der faszinierenden Ästhetik der Qlock2-Uhren inspiriert ist.
+                    </p>
+                    <p>Diese Uhr-App wurde mit HTML, CSS und JavaScript entwickelt und ist für den Einsatz auf einem Raspberry Pi
+                        optimiert.
+                        Sie wurde bewusst nicht responsiv gestaltet, da sie auf einem großen Bildschirm ihre volle Wirkung entfaltet.
+                        Das
+                        Raspberry Pi dient als perfekte Plattform, um diese Uhr in deinem Raum oder Büro zu platzieren und sie zu einem
+                        echten
+                        Hingucker zu machen.</p>
+                </div>
+            </a>
+            
+            <a href="https://github.com/igor722/automatisation" target="_blank">
+                <div class="projekt-card">
+                    <img src="imgs/screenshots/2023-09-08 10_29_02-fe v1 groesse_Bildschirm.ahk - Portfolio - Visual Studio Code.png"
+                        alt="AHK Automatisierung">
+                    <h4>Automatisierung</h4>
+                    <p>Mein Projekt basiert auf Automatisierungsskripten, die speziell für die Fortron Stickmaschine entwickelt wurden.
+                        Diese
+                        Skripte ermöglichen es, mehrere Schritte der Maschinenbedienung auf einen einzigen Befehl zu reduzieren, und
+                        zwar durch
+                        die Verwendung von Barcodes. Das Ergebnis ist eine dramatische Vereinfachung des Stickprozesses, Zeitersparnis
+                        und Reduzierte Fehlerquote.</p>
+                    <p></p>
+                </div>
+            </a>
+            
+            <a href="https://github.com/igor722/password-generator" target="_blank">
+                <div class="projekt-card">
+                    <img src="imgs/screenshots/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="Python Coding">
+                    <h4>Password Generator</h4>
+                    <p>Dieses Python-Programm bietet eine einfache Möglichkeit, zufällige Kennwörter mit einer gewünschten Länge zu
+                        erstellen
+                        und in einer Textdatei zu speichern.</p>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+        
+    
+
+    <!--KONTAKT-->
+    
+    <div class="kontakte">
+        <h1 id="meine-kontakt">Kontakt</h1>
+        <div class="kontakt-liste">
+            <div class="column1">
+                <div class="kontakt">
+                    <img src="icons/phone-solid.svg" alt="Telefon">
+                    <a href="tel:+4915756680167">01575 668 0167</a>
+                </div>
+                <div class="kontakt">
+                    <img src="icons/envelope-solid.svg" alt="E-Mail">
+                    <a href="mailto: iarnaut@hotmail.com">iarnaut@hotmail.com</a>
+                </div>
+            </div>
+            <div class="column2">
+                <div class="kontakt-icon">
+                    <a href="https://www.linkedin.com/in/igor-arnaut-a75504235/" target="_blank"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+                </div>
+                <div class="kontakt-icon">
+                    <a href="https://github.com/igor722" target="_blank"><img src="icons/github.svg" alt="Github"></a>
+                </div>
+                <div class="kontakt-icon">
+                    <a href="https://github.com/igor722/portfolio" target="_blank"><img src="icons/globe-solid.svg" alt="Website"></a>
+                </div>
+            </div>            
+        </div>
+        
+    </div>
+
+    
+</body>
+</html>
