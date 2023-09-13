@@ -408,6 +408,10 @@ ul.topnav li:hover{
         font-size: 24px;
     }
 
+    .logo img {
+        margin: 30px;
+    }
+
     .interesse h1{
         margin: 20px;
         padding-top: 20px;
@@ -468,7 +472,7 @@ ul.topnav li:hover{
 
 
     .intcol {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
         margin: 0;
         padding: 5px;
     }
@@ -512,7 +516,7 @@ ul.topnav li:hover{
     }
 
     .language {
-        grid-template-columns: 0.5fr 1fr;
+        grid-template-columns: 0.5fr 0.7fr;
     }
 
     .flags {
