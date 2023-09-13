@@ -375,6 +375,14 @@ ul.topnav li:hover{
  }
 
  /*RESPONSIVITY*/
+@media only screen and (max-width: 900px) {
+
+    grid-template-columns {
+        repeat(4, 1fr);
+    } 
+
+}
+
  @media only screen and (max-width: 900px) {
 
     ul.topnav li {
@@ -395,7 +403,20 @@ ul.topnav li:hover{
     }
 
     .languages {
-        width: 80%;
+        width: 100%;
+        margin-left: -50px;
+     }
+
+     .language {
+        grid-template-columns: 0.2fr 1fr;
+     }
+
+     .language p {
+        margin-left: 0px;
+     }
+
+     .intcol {
+        grid-template-columns: 1fr 1fr;
      }
      
  }
